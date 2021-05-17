@@ -33,12 +33,11 @@ sample_table <- coil_table %>% sample_n(50)
 #T-test on sample set against population PSI
 t.test(sample_table$PSI,mu=mean(coil_table$PSI)) 
 
+#t-tests for lot1
+t.test(subset(coil_table$PSI,coil_table$Manufacturing_Lot == "Lot1"),coil_table$PSI)
 
+#t-tests for lot2
+t.test(subset(coil_table$PSI,coil_table$Manufacturing_Lot == "Lot2"),coil_table$PSI)
 
-
-
-
-
-
-
-
+#t-tests for lot3
+t.test(subset(coil_table$PSI,coil_table$Manufacturing_Lot == "Lot3"),coil_table$PSI)
