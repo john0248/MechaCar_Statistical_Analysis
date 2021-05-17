@@ -48,9 +48,17 @@ Let’s look a little closer at the three manufacturing lots.  For all three lot
 
 ## Study Design: MechaCar vs Competition.
 
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
-In your description, address the following questions:
-What metric or metrics are you going to test?
+In our statical review of MechaCar data, we were concerned with mpg against different variables and suspension coil manufacturing psi.  Suspension coils impact comfort of the ride and mpg affects costs to the owner.  I think customers would be interested in understanding repair cost.  To understand repair cost, we need to get a handle on vehicle maintenance at a given point in time.  
+
+We could collect data for repair costs incurred at 50K miles and 100K miles.  We would need this data on a large sampling of manufacturers (competitors) in the same category as MechaCar.  
+
+About the study:
+What metric or metrics are you going to test? 
+I need the following data for each manufacturer: repair costs and milage.   I would determine the mean costs and mean milage at a minimum. 
+
 What is the null hypothesis or alternative hypothesis?
-What statistical test would you use to test the hypothesis? And why?
-What data is needed to run the statistical test?
+Null: All manufacturers have the same mean repair costs at 50K miles (and a second run at 100K miles).
+Alter: At least one of the manufacturers has a mean repair costs at 50K miles (and a second run at 100K miles) statistically different than the others.
+
+What statistical test would you use to test the hypothesis? And why? We can summarize() the data with mean, medium, variance and std. deviation.   I would also use a one-way analysis of variance (ANOVA) test, which is used to test the means of a single dependent variable across a single independent variable with multiple groups.
+
