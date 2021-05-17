@@ -29,7 +29,22 @@ When we dive into each manufacturing lot individually, we can see there are diff
 
 ## T-Tests on Suspension Coils
 
-briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+I ran a two-sided t-test on the general population and on each manufacturing lot.  For the general population I compared it to a random sample size of 50 and used a single sample t-test. 
+
+When we run the t-test on a sample size of 50 against the population we see the mean is NOT equal to 1500 psi.  The p-value was 0.1922 and the mean was 1497.14.
+
+![image](t-test.png)
+
+Let’s look a little closer at the three manufacturing lots.  For all three lots, we use a two-sample t-test to see the mean and p-values. 
+1.	Lot1, the p-value was 0.06613 and the mean of 1500.00.
+2.	Lot2, the p-value was 0.06026 and the mean of 1500.20.
+3.	Lot3, the p-value was 0.1818 and the mean of 1496.14.
+
+![image](t-test_Lot1.png)
+
+![image](t-test_Lot2.png)
+
+![image](t-test_Lot3.png)
 
 ## Study Design: MechaCar vs Competition.
 
